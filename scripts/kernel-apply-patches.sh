@@ -296,6 +296,9 @@ KPATCHES=(
     #    模式也没人重写，只开MTP/PTP时接电脑枚举不到（#41评审）。只去掉match_existing_only不行，见补丁说明。
     #    0111留给#46评审里拆出去的NVMe挂起下电（实验性，另提）。
     0112-usb-gadget-configfs-take-none-as-unbind-and-wait-for-an-absent-UDC.patch
+    # 0113: port1 live Type-C reconfiguration keeps native common inputs; no extra idle refs.
+    # ECHO-B/USB3/s2idle evidence and remaining DP/power limits: docs/contrib/rc2-usb-hotplug-20261028.md.
+    0113-phy-qcom-qmp-combo-keep-common-inputs-on-gaokun3-reconfigure.patch
 )
 
 # ⚠️ 诊断补丁【不进发版内核】：只在带 --with-diag 时打。顺序有依赖：0028/0029 依赖 0023，
