@@ -77,6 +77,7 @@
 | [sensors-ssc-protocol.md](sensors-ssc-protocol.md) | SSC 传感器 QMI / protobuf 协议规格（每条带出处），sensors HAL 的实现依据 | 参考（开头"客户端尚未实现"已过时：HAL 在 [`device/huawei/gaokun3/sensors-hal/`](../device/huawei/gaokun3/sensors-hal/README.md)） | 维护者 |
 | [stylus.md](stylus.md) | 手写笔（M-Pencil）：触摸从片与笔 MCU 两条数据通路，驱动 / 守护进程 / 权限的组成，设计要点，已知限制，调试 | 现行 | 维护者 · AI |
 | [contrib/slpi-sensors-deploy.md](contrib/slpi-sensors-deploy.md) | 外部贡献：Linux 侧 SLPI 传感器部署（推翻了 #37 的旧结论） | 参考（原样保留） | 维护者 |
+| [contrib/rc2-usb-hotplug-20261028.md](contrib/rc2-usb-hotplug-20261028.md) | Rivarise 的 RC2 实测：ECHO-B 热插拔修复、USB 3 对照、A16 音频及睡眠证据；A17 / DP / 长期待机边界 | 参考（2026-10-28） | 维护者 · AI |
 | [fingerprint/README.md](fingerprint/README.md) | 指纹 Windows 侧逆向报告的目录说明（报告本身不入库） | 参考 | 维护者 |
 | [parallel-mainline-generic.md](parallel-mainline-generic.md) | LineageOS 系 mainline-generic 的 gaokun3 支持（他人分享的补丁与交叉验证） | 历史（2026-08-17 后未跟进） | 维护者 |
 | [palm-rejection.md](palm-rejection.md) | 触摸屏的手掌识别：驱动里“手的位置图”的规则，以`MT_TOOL_PALM`撤回已上报的触点，参数、计数器、已知限制与调试 | 现行 | 维护者 · AI |
