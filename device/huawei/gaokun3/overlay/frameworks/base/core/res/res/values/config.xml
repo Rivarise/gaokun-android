@@ -238,4 +238,11 @@
         <item>255</item>
     </integer-array>
 
+    <!-- No wake-up significant-motion/motion-detect sensor is exposed on gaokun3.
+         With a null motion sensor the normal sensor-gated deep-idle progression
+         cannot run. Select Android's sensor-independent path; accelerometer and
+         gyroscope remain enabled. This does not imply SoC power collapse.
+         See docs/power-idle-motion-sensor-experiment.md. -->
+    <bool name="config_autoPowerModeUseMotionSensor">false</bool>
+
 </resources>
