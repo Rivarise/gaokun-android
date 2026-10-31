@@ -54,7 +54,14 @@ Device: MateBook E Go gaokun3. Android 16 RC2 and Android 17 build
   reboot. On the new boot the module reported `EARLY_IMMUTABLE_BIND_APPLIED`,
   the actual DeviceIdleController reported `mUseMotionSensor=false`, and the
   kernel and accepted stylus executable hashes matched the pre-reboot values.
-  Natural A17 idle/wake validation is pending at the time of this preparation.
+  A17 natural idle/wake was then confirmed: unplugged at 10:18:00.278,
+  screen off at 10:18:08.972, unforced `device_idle=full` at 10:20:40.639,
+  manual wake at 10:20:52.772 and USB reconnect at 10:21:14.258. The user
+  reported normal wake. Deep idle was observed for only about twelve seconds
+  before manual wake, so this is entry/wake acceptance, not prolonged residency
+  or battery-life validation. Across the before/after snapshots (including
+  brief connected periods), suspend success increased 0 to 7 and failures
+  0 to 2; AOSD/CXSD remained zero.
 
 Private raw logs, application/network identifiers, signing materials and local
 module mechanics are intentionally outside the repository.
